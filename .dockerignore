@@ -1,0 +1,7 @@
+# Keep .git — the commit image bakes the full history. Prune only local build cruft.
+**/__pycache__/
+*.pyc
+mayhem/wheelhouse/
+build/
+dist/
+*.egg-info/

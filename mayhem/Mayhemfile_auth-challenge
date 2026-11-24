@@ -1,0 +1,10 @@
+project: savantenvs/azure-activedirectory-library-for-python
+target: auth-challenge
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/auth-challenge/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_auth_challenge
+    libfuzzer: true
+    timeout: 10

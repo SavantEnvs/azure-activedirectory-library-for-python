@@ -1,0 +1,1 @@
+Bearer realm="contoso", authorization_uri="https://login.microsoftonline.com/common", error="invalid_token", error_description="expired"

@@ -1,0 +1,10 @@
+project: savantenvs/azure-activedirectory-library-for-python
+target: wstrust-response
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/wstrust-response/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_wstrust_response
+    libfuzzer: true
+    timeout: 10

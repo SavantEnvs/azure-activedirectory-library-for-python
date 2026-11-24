@@ -1,0 +1,7 @@
+project: savantenvs/azure-activedirectory-library-for-python
+target: fuzz-xmlutil
+
+cmds:
+  - cmd: /mayhem/fuzz_xmlutil
+    libfuzzer: true
+    timeout: 10

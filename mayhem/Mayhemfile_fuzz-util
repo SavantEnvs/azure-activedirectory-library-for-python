@@ -1,0 +1,10 @@
+project: savantenvs/azure-activedirectory-library-for-python
+target: fuzz-util
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-util/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_util
+    libfuzzer: true
+    timeout: 10

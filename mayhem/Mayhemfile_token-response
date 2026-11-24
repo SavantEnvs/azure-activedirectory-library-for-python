@@ -1,0 +1,10 @@
+project: savantenvs/azure-activedirectory-library-for-python
+target: token-response
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/token-response/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_token_response
+    libfuzzer: true
+    timeout: 10

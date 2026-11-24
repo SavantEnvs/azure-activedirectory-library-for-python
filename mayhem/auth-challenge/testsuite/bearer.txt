@@ -1,0 +1,1 @@
+Bearer authorization_uri="https://login.windows.net/tenant/oauth2/authorize", resource="https://graph.windows.net"
